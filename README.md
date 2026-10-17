@@ -1,24 +1,31 @@
-# Retail Inventory Management System
+# Library Management System — Week 3
 
-Java-based inventory management system for a small retail business.
+JUnit 5 testing and debugging extension of the Week 2 Java Library Management System.
 
-## Week 1 Status
-This repository contains the planned architecture, package structure, core Java scaffolding, database schema and implementation roadmap for the Week 1 Project Planning and Architecture Design task.
+## Covered
+- Create, Read, Update, Delete
+- Duplicate ID / ISBN validation
+- Missing-book exceptions
+- Invalid and blank input
+- Boundary publication years
+- Defensive-copy behavior
+- Regression and edge-case tests
 
-## Planned Features
-- User authentication and role management
-- Product management
-- Inventory and stock control
-- Supplier management
-- Customer orders
-- Low-stock alerts
-- Sales and inventory reports
+## Run
+```bash
+mvn test
+```
 
-## Technology
-Java, MySQL, JDBC, Maven, Git/GitHub
+## Application
+```bash
+mvn -q -DskipTests package
+java -cp target/classes com.library.app.LibraryApplication
+```
 
-## Architecture
-Controller -> Service -> DAO -> MySQL Database
-
-## Design Patterns
-MVC, DAO, Singleton, Factory
+## Structure
+```text
+src/main/java/com/library/
+src/test/java/com/library/service/
+pom.xml
+README.md
+```
